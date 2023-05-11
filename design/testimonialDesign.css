@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#grid-container {
+    padding: 5% 3%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+#danielT {
+    background-color: hsl(263, 55%, 52%);
+}
+
+#jonathanT {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#jeanetteT, #kiraT {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#patrickT {
+    background-color: hsl(219, 29%, 14%);
+}
+
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 3px 1px 19px -1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 1px 19px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 1px 19px -1px rgba(0,0,0,0.3);
+    font-size: 1.2rem;
+}
+
+.whitecolor-text {
+    color: white;
+}
+
+.greycolor-text {
+    color: hsl(217, 19%, 35%);
+}
+
+.grid-item p {
+    opacity: 60%;
+}
+
+.info h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info h3 {
+    opacity: 50%;
+}
+
+@media (min-width: 700px) {
+    #grid-container {
+        display: flex;
+        max-width: 1300px;
+    }
+
+    #main-left {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+    }
+
+    #main-left .grid-item {
+        margin-right: 15px;
+    }
+
+    #top, #bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #danielT, #patrickT  {
+        flex-basis: 65%;
+    }
+
+    #jonathanT, #jeanetteT {
+        flex-basis: 35%;
+    }
+
+    #kiraT {
+        flex-basis: 30%;
+    }
+}
